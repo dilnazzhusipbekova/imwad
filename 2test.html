@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilnaz Zhussipbekova - Personal Web Page</title>
+    <style>
+        body {
+            background-color: #ffe6f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            text-align: center;
+            background-color: #fff;
+            color: #ff66b2;
+            padding: 20px;
+            transition: background-color 0.5s;
+        }
+        header:hover {
+            background-color: #ffccdb;
+        }
+        section {
+            margin: 20px auto;
+            padding: 15px;
+            border: 2px solid #ff66b2;
+            width: 90%; 
+            max-width: 800px; 
+            background-color: #fff;
+            border-radius: 10px;
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+        }
+        h1, h2, h3 {
+            color: #ff4da6;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #221d1d;
+        }
+        a {
+            color: #060304;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Button Styles */
+        .button {
+            background-color: #ff66b2;
+            color: rgb(29, 13, 13);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            text-decoration: none; 
+        }
+        .button:hover {
+            background-color: #ff4da6;
+            transform: scale(1.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            section {
+                width: 95%;
+            }
+            header {
+                padding: 15px;
+            }
+            .button {
+                padding: 8px 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem; /* Responsive font size */
+            }
+            h2, h3 {
+                font-size: 1.4rem; /* Responsive font size */
+            }
+            .button {
+                padding: 6px 10px; /* Smaller button padding for small screens */
+            }
+        }
+
+        /* Image Styles */
+        #bio img {
+            width: 150px; 
+            height: auto; 
+            border-radius: 50%; 
+            margin: 10px 0; 
+        }
+
+        
+        #interesting-facts {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        @media (min-width: 600px) {
+            #interesting-facts {
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+        }
+
+        
+        h3::before {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #ff4da6;
+            margin: 0 auto 10px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dilnaz Zhussipbekova</h1>
+        <p>IT Management Student</p>
+    </header>
+     
+    <br>
+
+    <!-- Bio Section -->
+    <section id="bio">
+        <h3>About Me</h3>
+        <img src="5190824584511875126.jpg" alt="Dilnaz Zhussipbekova"> 
+        <p style="color: #ff66b2;">My name is Dilnaz Zhussipbekova, I am a third-year student at KBTU. My birthday is in winter, on January 21, which means that I'm an Aquarius.</p>
+
+
+    
+    </section>
+    
+    <br>
+
+    <!-- Interesting Facts Section -->
+    <section id="interesting-facts">
+        <h3>Interesting Facts About Me</h3>
+        <p>I am interested in traveling and learning about the histories of cities and countries. I started with the cities of Kazakhstan and have visited almost 60% of them.</p>
+        <p>I also have an interest in sports, as it's important for health. My interest in sports began thanks to playing volleyball in school, for which I am very grateful.</p>
+        <p>Sometimes, I feel the urge to cook something new. Preparing interesting and delicious dishes for my family and loved ones is something I really enjoy.</p>
+    </section>
+    
+    <br>
+
+    <!-- Contact Section -->
+    <section id="contacts" style="text-align: center;">
+        <h3>Contact Me</h3>
+        <p>Email: <a href="mailto:dilnazhusipbekova@bk.ru">dilnazhusipbekova@bk.ru</a></p>
+        <p>Find me on: 
+            <a href="https://t.me/dilnazhussipbekova" target="_blank" class="button">Telegram (@dilnazhussipbekova)</a> | 
+            <a href="https://www.instagram.com/dilnazhussipbekova" target="_blank" class="button">Instagram</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dilnaz Zhussipbekova</p>
+    </footer>
+
+</body>
+</html>
